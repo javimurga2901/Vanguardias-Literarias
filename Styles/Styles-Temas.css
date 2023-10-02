@@ -1,0 +1,48 @@
+body {
+    background-image: url(../img/Expre-Fondo\ Completo.png);
+}
+
+Body {
+    text-align: justify;
+    font-size: large;
+    color: white;
+}
+body h1{
+    font-size: xx-large;
+    color: red;
+    text-align: center;
+}
+
+body h2 {
+    color: blue;
+}
+
+body #Autor1{
+    columns: 2;
+}
+
+body #FotoAutor1 {
+    text-align: center;
+}
+
+body #Autor2 {
+    columns: 2;
+}
+body #FotoAutor2 {
+    text-align: center;
+}
+
+body #Autor3 {
+    columns: 2;
+}
+body #FotoAutor3 {
+    text-align: center;
+}
+
+body div {
+    text-align: right;
+}
+
+p {
+    font-size: large;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="../Styles/Styles.css">
+    <title>Cuestionario</title>
+    <style>
+        .interactive-container {
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+    <script>
+        function checkAnswer() {
+            var userAnswer = document.getElementById("userAnswer").value.toLowerCase();
+            var correctAnswer = "andré breton";
+
+            if (userAnswer === correctAnswer) {
+                document.getElementById("result").textContent = "¡Correcto!";
+            } else {
+                document.getElementById("result").textContent = "Incorrecto, intenta nuevamente.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Ponte a prueba</h1>
+    <p>Lee el siguiente enunciado y escribe la respuesta en la caja de texto:</p>
+    <div class="interactive-container">
+        <p>¿Quién es considerado el padre del movimiento surrealista?</p>
+        <input type="text" id="userAnswer" placeholder="Escribe tu respuesta aquí">
+        <button onclick="checkAnswer()">Comprobar</button>
+        <p id="result"></p>
+        <button id="Back"><a href="Q-P7.html">Atrás</a></button>
+        <button id="Next"><a href="Q-P9.html">Siguiente</a></button>
+    </div>
+</body>
+</html>

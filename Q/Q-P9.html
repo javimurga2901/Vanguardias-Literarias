@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="../Styles/Styles.css">
+    <title>Cuestionario</title>
+    <style>
+        .interactive-container {
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+    <script>
+        function checkAnswer() {
+            var userAnswer = document.getElementById("userAnswer").value.toLowerCase();
+            var correctAnswer = "xx";
+
+            if (userAnswer === correctAnswer) {
+                document.getElementById("result").textContent = "¡Correcto!";
+            } else {
+                document.getElementById("result").textContent = "Incorrecto, intenta nuevamente.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Ponte a prueba</h1>
+    <p>Lee el siguiente enunciado y escribe la respuesta en la caja de texto:</p>
+    <div class="interactive-container">
+        <p>¿El Ultraísmo fue un movimiento literario vanguardista surgido en España a principios de qué siglo? Escriba en números romanos</p>
+        <input type="text" id="userAnswer" placeholder="Escribe tu respuesta aquí">
+        <button onclick="checkAnswer()">Comprobar</button>
+        <p id="result"></p>
+        <button id="Back"><a href="Q-P8.html">Atrás</a></button>
+        <button id="Next"><a href="Q-P10.html">Siguiente</a></button>
+    </div>
+</body>
+</html>
